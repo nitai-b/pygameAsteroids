@@ -1,7 +1,7 @@
 import pygame
 
 from circleshape import CircleShape
-from constants import PLAYER_RADIUS, PLAYER_TURN_SPEED
+from constants import PLAYER_RADIUS, PLAYER_TURN_SPEED, PLAYER_SPEED
 
 
 # A player is a type of circle
@@ -11,6 +11,7 @@ class Player(CircleShape):
         self.y = y
         super().__init__(x, y, PLAYER_RADIUS)
         self.rotation = 0
+        self.image = ""
 
     # in the player class
     def triangle(self):
